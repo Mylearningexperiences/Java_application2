@@ -1,7 +1,7 @@
-pipleline {
+pipeline {
   agent any
    stages {
-     stage('Build')
+     stage('Build') {
        steps {
           echo 'Building..'
           }
@@ -10,7 +10,7 @@ pipleline {
          steps {
            echo 'Testing'
            }
-           stage('Deploy')
+           stage('Deploy') {
               steps {
               echo 'Deploying..'
               }
